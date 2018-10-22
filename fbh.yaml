@@ -64,7 +64,7 @@ title: "What setting of FredBoat do you want to change?"
 branches:
 - message: "The language"
   targetId: bot-settings-language
-- message: "Restrict it to a single channel"
+- message: "Restrict it to a single text or voice channel"
   targetId: bot-settings-restrict
 - message: "Restrict members from using some of the commands"
   targetId: bot-settings-perms
@@ -74,8 +74,8 @@ branches:
 ##Bot Answers
 ---
 id: bot-issues-cantadd
-title: "- You need Manage Server permissions in the server you want to add fredboat to. \n
-- You need to log into discord in the browser version => https://discordapp.com/ \n
+title: "- You need Manage Server permissions in the server you want to add fredboat to.\n
+- You need to log into discord in the browser version => https://discordapp.com/\n
 - If you are sure that you covered both of the above, try adding the bot in an incognito/private window."
 
 ---
@@ -107,7 +107,8 @@ title: "Say `;;lang` to start changing your preferred language."
 
 ---
 id: bot-settings-restrict
-title: "Use the Discord permissions to take away FredBoats write permissions for all the channels where it should not talk in."
+title: "Use the Discord permissions to take away FredBoat's `Write` permissions for all the channels where it should not talk in. Likewise, if you do not want the bot to join certain voice channels, take away its permissions to `Connect`. Also please make sure that none of the roles the bot (or `@everyone`) has Administrator permissions in Server Settings > Roles\n
+https://imgur.com/ZVQZoaN"
 
 ---
 id: bot-settings-perms
@@ -120,10 +121,10 @@ title: "If you have a __reasonable__ suggestion for the bot, please check out ou
 
 ---
 id: bot-types
-title: "Fredboat Music plays music, livestreams, and playlists for you and other users in your voice chat. :point_right::skin-tone-1: https://fredboat.com/docs\n
-FredboatPatron is an exlusive music bot with exclusive features such as the `;;volume` command, Patron role on our server and Spotify Playlist integration ($2 USD a month). :point_right::skin-tone-1: https://fredboat.com/docs/donate\n
-Fredboat Cutting Edge is a music bot we use to test some new technology that will, if all goes well, be implemented in the free Fredboat Music bot. Check the channel description for #cutting-edge-bugs for an invite link. It is only used when we are testing a new feature... So, uptime will be spotty and is not guaranteed.\n
-GensokyoBot plays Gensokyo radio. You can invite it here https://discordapp.com/oauth2/authorize?&client_id=302857939910131712&scope=bot"
+title: "<@184405311681986560> plays music, livestreams, and playlists for you and other users in your voice chat. :point_right::skin-tone-1: https://fredboat.com/docs\n
+<@241950106125860865> is an exlusive music bot with exclusive features such as the `;;volume` command, Patron role on our server and Spotify Playlist integration ($2 USD a month). :point_right::skin-tone-1: https://fredboat.com/docs/donate\n
+<@341924447139135488> is a music bot we use to test some new technology that will, if all goes well, be implemented in the free Fredboat Music bot. Check the channel description for #cutting-edge-bugs for an invite link. It is only used when we are testing a new feature... So, uptime will be spotty and is not guaranteed.\n
+<@302857939910131712> plays Gensokyo radio. You can invite it here https://discordapp.com/oauth2/authorize?&client_id=302857939910131712&scope=bot"
 
 ---
 id: support-role
@@ -150,7 +151,7 @@ branches:
 
 ---
 id: server-roles
-title:
+title: "Here's some of the most common role issues." 
 branches:
 - message: "I would like to be able to speak in <#243801860836818945>/<#300216520125054981>" # #music-discussion and #coding respectively
   targetId: server-roles-keys
@@ -162,7 +163,7 @@ branches:
 ###Server Answers
 ---
 id: report-user
-title: "Please report this in <#262355115137171457>, if possible including screenshots." # #support
+title: "Please report this in <#262355115137171457>. Include screenshots if possible." # #support
 roleId: 262355115137171457 # #support
 
 ---
@@ -175,7 +176,7 @@ title: "You have probably broken one of the rules of the channel. You may find t
 
 ---
 id: server-roles-staff
-title: "No."
+title: "Thank you for your interest, but the staff at Fredboat Hangout are not accepting applications for their team."
 
 ---
 id: server-ads
