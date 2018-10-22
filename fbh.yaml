@@ -1,1 +1,190 @@
+---
+id: root
+title: "What do you need help with?"
+branches:
+- message: "I need help with FredBoat itself"
+  targetId: bot-root
+- message: "I need help with the FredBoat Server"
+  targetId: server-root
 
+###Bot Questions
+---
+id: bot-root
+title: "What's your issue with FredBoat?"
+branches:
+- message: "FredBoat is not working as expected."
+  targetId: bot-issues
+- message: "I would like to change a setting."
+  targetId: bot-settings
+- message: "I have a suggestion for FredBoat."
+  targetId: bot-suggestion
+- message: "I see that there are a few types Fred here. What's the deal?"
+  targetId: bot-types
+- message: "I have gone through every option, but none of them helped me resolve my issue."
+  targetId: support-role
+
+---
+id: bot-issues
+title: "How is the bot not working?"
+branches:
+- message: "FredBoat is offline in my server."
+  targetId: bot-issues-offline
+- message: "I cannot add FredBoat."
+  targetId: bot-issues-cantadd
+- message: "I added FredBoat, but I do not see it in my server."
+  targetId: bot-issues-memberlist
+- message: "FredBoat is not responding to any of my messages."
+  targetId: bot-issues-notresponding
+- message: "FredBoat is lagging."
+  targetId: bot-issues-lag
+- message: "Go back one step"
+  targetId: bot-root
+
+---
+id: bot-issues-offline
+title: "Let's make sure that you have the correct bot first."
+branches:
+- message: "I have <@184405311681986560> in my server." # @FredBoat
+  targetId: bot-issues-offline-wrongbot
+- message: "I have <@184405311681986560> in my server." # @FredBoat♪♪
+  targetId: bot-issues-offline-maintenance
+
+---
+id: bot-issues-offline-maintenance
+title: "Please read <#262355115137171457> and pay attention to any pinned, as well as recent messages." # #bot-status
+branches:
+- message: "I found an explanation for the downtime in <#262355115137171457>" # #bot-status
+  targetId: root
+- message: "There is no announced or scheduled downtime for FredBoat to be found in <#262355115137171457>" # #bot-status
+  targetId: support-role
+
+---
+id: bot-settings
+title: "What setting of FredBoat do you want to change?"
+branches:
+- message: "The language"
+  targetId: bot-settings-language
+- message: "Restrict it to a single channel"
+  targetId: bot-settings-restrict
+- message: "Restrict members from using some of the commands"
+  targetId: bot-settings-perms
+- message: "Go back one step"
+  targetId: bot-root
+
+##Bot Answers
+---
+id: bot-issues-cantadd
+title: "- You need Manage Server permissions in the server you want to add fredboat to. \n
+- You need to log into discord in the browser version => https://discordapp.com/ \n
+- If you are sure that you covered both of the above, try adding the bot in an incognito/private window."
+
+---
+id: bot-issues-memberlist
+title: "If you are sure that you have added the bot to your discord, but cannot see it on the right, either look for it in Server Settings > Members, or make sure it has read permissions to the text channel you are in. "
+
+---
+id: bot-issues-notresponding
+title: "If the bot is not responding to any of your messages in a given channel, make sure that it has the following permissions, by clicking on che channel settings:\n
+    `- Read Messages`\n
+    `- Send Messages`\n
+    `- Embed Links`\n
+    `- Read Message History`\n"
+
+---
+id: bot-issues-lag
+title: "- Sit through and hope for better hardware soon\n
+- Change voice region to or close to us-east which might not help a lot => https://imgur.com/a/pq5OM \n
+- Support us and get access to a premium bot with little to no downtime and lag, as well as some extra features such as the `;;volume` command, Patron role on our server and Spotify Playlist integration => https://www.patreon.com/fredboat"
+
+---
+id: bot-issues-offline-wrongbot
+title: "You seem to have invited the deprecated version of FredBoat. That will not be revived and you can safely kick it.\n
+Invite the correct FredBoat by clicking the following link => https://goo.gl/cFs5M9"
+
+---
+id: bot-settings-language
+title: "Say `;;lang` to start changing your preferred language."
+
+---
+id: bot-settings-restrict
+title: "Use the Discord permissions to take away FredBoats write permissions for all the channels where it should not talk in."
+
+---
+id: bot-settings-perms
+title: "You can view information on how to use FredBoat's permissions system here: https://fredboat.com/docs/permissions\n
+If you'd like to restrict users from __completely__ using the bot, you need to use discord permissions to stop them from typing in the channel the bot takes commands from."
+
+---
+id: bot-suggestion
+title: "If you have a __reasonable__ suggestion for the bot, please check out our <#183979058575441920> channel. Also make sure that the thing you are suggesting has not been discussed before by using the search function." # #suggestions
+
+---
+id: bot-types
+title: "Fredboat Music plays music, livestreams, and playlists for you and other users in your voice chat. :point_right::skin-tone-1: https://fredboat.com/docs\n
+FredboatPatron is an exlusive music bot with exclusive features such as the `;;volume` command, Patron role on our server and Spotify Playlist integration ($2 USD a month). :point_right::skin-tone-1: https://fredboat.com/docs/donate\n
+Fredboat Cutting Edge is a music bot we use to test some new technology that will, if all goes well, be implemented in the free Fredboat Music bot. Check the channel description for #cutting-edge-bugs for an invite link. It is only used when we are testing a new feature... So, uptime will be spotty and is not guaranteed.\n
+GensokyoBot plays Gensokyo radio. You can invite it here https://discordapp.com/oauth2/authorize?&client_id=302857939910131712&scope=bot"
+
+---
+id: support-role
+title: "Please explain your issue in detail to one of our staff members in <#262355115137171457>." # #support
+roleId: 504033109449244694 # @Needs Human Assistance
+
+###Server Questions
+---
+id: server-root
+title: "What kind of issues with our Server are you facing?"
+branches:
+- message: "Someone from this server sent me ads or inappropriate messages in my private messages."
+  targetId: report-user
+- message: "Someone is breaking the rules!"
+  targetId: report-user
+- message: "I have a question/request regarding roles in this server"
+  targetId: server-roles
+- message: "I would like to advertise my server/channel/social media on here."
+  targetId: server-ads
+- message: "I have a suggestion that will improve the server"
+  targetId: server-suggestions
+- message: "I have looked at **all** the options, and none of them helped me."
+  targetId: support-role
+
+---
+id: server-roles
+title:
+branches:
+- message: "I would like to be able to speak in <#243801860836818945>/<#300216520125054981>" # #music-discussion and #coding respectively
+  targetId: server-roles-keys
+- message: "I am unable to type in one of the channels that I was previously able to."
+  targetId: server-roles-muted
+- message: "I would like to apply to be a Moderator/Admin"
+  targetId: server-roles-staff
+
+###Server Answers
+---
+id: report-user
+title: "Please report this in <#262355115137171457>, if possible including screenshots." # #support
+roleId: 262355115137171457 # #support
+
+---
+id: server-roles-keys
+title: "Keep an eye out on <#174820236481134592> for active staff members. If you see someone, get their attention and ask them for it."
+
+---
+id: server-roles-muted
+title: "You have probably broken one of the rules of the channel. You may find those in the channel description. Wait for about a week and ping the staff member that muted you, explaining your situation."
+
+---
+id: server-roles-staff
+title: "No."
+
+---
+id: server-ads
+title: "Advertisement of any form, be it directly or via DMs is 100% forbidden. Any attempt at doing so will be punished with an instant ban with no chance to appeal."
+
+---
+id: server-suggestions
+title: "If you have a reasonable suggestion for the bot, please check out our <#183979058575441920> channel.\n
+Also make sure that the thing you are suggesting has not been discussed before by using the search function.\n\n
+__We will NOT add a memes channel__"
+###To change the voice region for your server (an easy way to fix many Fredboat Music bugs) follow the steps in the below gif. Note: you can change the server region right back by following the same steps.
+###https://imgur.com/a/pq5OM
