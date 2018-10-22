@@ -44,7 +44,7 @@ branches:
 id: bot-issues-offline
 title: "Let's make sure that you have the correct bot first."
 branches:
-- message: "I have <@184405311681986560> in my server." # @FredBoat
+- message: "I have <@150376112944447488> in my server." # @FredBoat
   targetId: bot-issues-offline-wrongbot
 - message: "I have <@184405311681986560> in my server." # @FredBoat♪♪
   targetId: bot-issues-offline-maintenance
