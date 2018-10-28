@@ -49,7 +49,7 @@ branches:
 id: bot-questions
 title: "Here are some of the most common questions"
 branches:
-- message: "I see that there are a few types of Freds here. What's the deal?"
+- message: "I see that there are different bo(a)ts here. What's the deal?"
   targetId: bot-types
 - message: "What can FredBoat do?"
   targetId: bot-commands
@@ -216,7 +216,7 @@ branches:
 ---
 id: report-user
 title: "Please report this in <#262355115137171457>. Include screenshots if possible." # #support
-roleId: 503984429044203538 # #support
+roleId: 503984429044203538 # @Needs Human Assistance.
 
 ---
 id: server-roles-keys
