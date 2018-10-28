@@ -103,7 +103,7 @@ title: "If you are sure that you have added the bot to your discord, but cannot 
 
 ---
 id: bot-issues-notresponding
-title: "If the bot is not responding to any of your messages in a given channel, make sure that it has the following permissions, by clicking on che channel settings:\n
+title: "If the bot is not responding to any of your messages in a given channel, make sure that it has the following permissions, by clicking on the channel settings:\n
     - `Read Messages`\n
     - `Send Messages`\n
     - `Embed Links`\n
