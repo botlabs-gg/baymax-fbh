@@ -53,7 +53,7 @@ branches:
   targetId: bot-types
 - message: "What can FredBoat do?"
   targetId: bot-commands
-- message: "Is there a way that I can make FredBoat stay in my channel, even if there is noone in it?"
+- message: "Is there a way that I can make FredBoat stay in my channel, even if there is no one in it?"
   targetId: bot-fredstay
 - message: "Can I have more than one FredBoat in my server?"
   targetId: bot-morefred
