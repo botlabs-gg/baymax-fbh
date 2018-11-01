@@ -49,6 +49,8 @@ branches:
 id: bot-questions
 title: "Here are some of the most common questions"
 branches:
+- message: "How can I invite FredBoat to my server?
+  targetId: bot-invite
 - message: "I see that there are different bo(a)ts here. What's the deal?"
   targetId: bot-types
 - message: "What can FredBoat do?"
@@ -72,7 +74,7 @@ id: bot-issues-offline-maintenance
 title: "Please read <#262355115137171457> and pay attention to any pinned, as well as recent messages." # #support
 branches:
 - message: "I found an explanation for the downtime in <#262355115137171457>" # #support
-  targetId: root
+  targetId: bot-issues-offline-announced
 - message: "There is no announced or scheduled downtime for FredBoat to be found in <#262355115137171457>" # #support
   targetId: support-role
 
@@ -125,6 +127,12 @@ title: "- Sit through and hope for better hardware soon\n
 - Support us and get access to a premium bot with little to no downtime and lag, as well as some extra features such as the `;;volume` command, Patron role on our server and Spotify Playlist integration => https://www.patreon.com/fredboat"
 
 ---
+id: bot-issues-offline-announced
+title: "Thank you for taking the time to read the announcement.\n
+If you would like to have access to music immediately, you can always check out <@241950106125860865>, which is more stable and has extra features => <https://fredboat.com/docs/donate>\n
+Also if you'd rather not spend money, you can also help us test new features by inviting <@341924447139135488> => Channel description of <#341926732884082690>"
+
+---
 id: bot-issues-noaudio
 title: "Most of the no audio issues that occur are because of Discord's audio node going bad. To resolve those, you'll need to change your voice region. You can do so, by going to your Server settings. Please refer to the gif below, should you need further help. \n
 If that doesn't resolve your issue, you can also try issuing the `;;destroy` command.\n
@@ -151,6 +159,10 @@ title: "You can view information on how to use FredBoat's permissions system her
 If you'd like to restrict users from __completely__ using the bot, you need to use discord permissions to stop them from typing in the channel the bot takes commands from."
 
 ---
+id: bot-invite
+title: "You can invite Fredboat by clicking on the following link => https://goo.gl/cFs5M9"
+
+---
 id: bot-suggestion
 title: "If you have a __reasonable__ suggestion for the bot, please check out our <#183979058575441920> channel. Also make sure that the thing you are suggesting has not been discussed before by using the search function." # #suggestions
 
@@ -158,7 +170,7 @@ title: "If you have a __reasonable__ suggestion for the bot, please check out ou
 id: bot-types
 title: "<@184405311681986560> plays music, livestreams, and playlists for you and other users in your voice chat. :point_right::skin-tone-1: <https://fredboat.com/docs>\n
 <@241950106125860865> is an exlusive music bot with exclusive features such as the `;;volume` command, Patron role on our server and Spotify Playlist integration ($2 USD a month). :point_right::skin-tone-1: <https://fredboat.com/docs/donate>\n
-<@341924447139135488> is a music bot we use to test some new technology that will, if all goes well, be implemented in the free FredBoat Music bot. Check the channel description for #cutting-edge-bugs for an invite link. It is only used when we are testing a new feature... So, uptime will be spotty and is not guaranteed.\n
+<@341924447139135488> is a music bot we use to test some new technology that will, if all goes well, be implemented in the free FredBoat Music bot. Check the channel description for <#341926732884082690> for an invite link. It is only used when we are testing a new feature... So, uptime will be spotty and is not guaranteed.\n
 <@302857939910131712> plays Gensokyo radio. You can invite it here <https://discordapp.com/oauth2/authorize?&client_id=302857939910131712&scope=bot>"
 
 ---
