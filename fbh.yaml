@@ -49,7 +49,7 @@ branches:
 id: bot-questions
 title: "Here are some of the most common questions"
 branches:
-- message: "How can I invite FredBoat to my server?
+- message: "How can I invite FredBoat to my server?"
   targetId: bot-invite
 - message: "I see that there are different bo(a)ts here. What's the deal?"
   targetId: bot-types
