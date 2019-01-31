@@ -12,6 +12,8 @@ branches:
 id: bot-root
 title: "What's your issue with FredBoat?"
 branches:
+- message: "I want to invite FredBoat to my server"
+  targetId: bot-invite
 - message: "I have a general question regarding FredBoat"
   targetId: bot-questions
 - message: "FredBoat is not working as expected."
@@ -57,6 +59,8 @@ branches:
   targetId: bot-commands
 - message: "Is there a way that I can make FredBoat stay in my channel, even if there is no one in it?"
   targetId: bot-fredstay
+- message: "I'd like to support the development and get extra features."
+  targetId: bot-types-patron
 - message: "Can I have more than one FredBoat in my server?"
   targetId: bot-morefred
 
@@ -84,10 +88,14 @@ title: "What setting of FredBoat do you want to change?"
 branches:
 - message: "The language"
   targetId: bot-settings-language
+- message: "The prefix"
+  targetId: bot-settings-prefix
 - message: "Restrict it to a single text or voice channel"
   targetId: bot-settings-restrict
 - message: "Restrict members from using some of the commands"
   targetId: bot-settings-perms
+- message: "Make FredBoat Stay in the VC indefinitely"
+  targetId: bot-settings-stay
 - message: "Go back one step"
   targetId: bot-root
 
@@ -148,6 +156,10 @@ id: bot-settings-language
 title: "Say `;;lang` to start changing your preferred language."
 
 ---
+id: bot-settings-prefix
+title: "To set the bot's prefix, say `;;prefix [Your preferred prefix]` or do `;;help prefix` for more information.
+
+---
 id: bot-settings-restrict
 title: "Use the Discord permissions to take away FredBoat's `Write` permissions for all the channels where it should not talk in. Likewise, if you do not want the bot to join certain voice channels, take away its permissions to `Connect`.\n
 Also please make sure that none of the roles the bot (or `@everyone`) has Administrator permissions in Server Settings > Roles\n
@@ -172,6 +184,16 @@ title: "<@184405311681986560> plays music, livestreams, and playlists for you an
 <@241950106125860865> is an exlusive music bot with exclusive features such as the `;;volume` command, Patron role on our server and Spotify Playlist integration ($2 USD a month). :point_right::skin-tone-1: <https://fredboat.com/docs/donate>\n
 <@341924447139135488> is a music bot we use to test some new technology that will, if all goes well, be implemented in the free FredBoat Music bot. Check the channel description for <#341926732884082690> for an invite link. It is only used when we are testing a new feature... So, uptime will be spotty and is not guaranteed.\n
 <@302857939910131712> plays Gensokyo radio. You can invite it here <https://discordapp.com/oauth2/authorize?&client_id=302857939910131712&scope=bot>"
+
+---
+id: bot-types-patron
+title: "You can support Fredboat's development by becoming a Patron on Patreon. For just $2 a month you can also enjoy premium features with the FredboatPatron bot including:\n
+1. Little to no lag\n
+2. ;;volume command control\n
+3. The ability to play Spotify playlists.\n
+4. Have FredBoat stay in the VC indefinitely without selfhosting.\n
+5. The Patron role in this Discord Server!\n
+Click here to donate and gain instant access to your new bot --> https://www.patreon.com/fredboat"
 
 ---
 id: bot-commands
