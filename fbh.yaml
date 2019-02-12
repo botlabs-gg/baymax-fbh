@@ -6,6 +6,8 @@ branches:
   targetId: bot-root
 - message: "I need help with the FredBoat Server"
   targetId: server-root
+- message: "**None of the options helped! Get me in touch with an actual person!**"
+  targetId: support-role
 
 ###Bot Questions
 ---
@@ -23,7 +25,7 @@ branches:
 - message: "I have a suggestion for FredBoat."
   targetId: bot-suggestion
 
-- message: "I have gone through every option, but none of them helped me resolve my issue."
+- message: "**None of the options helped! Get me in touch with an actual person!**"
   targetId: support-role
 
 ---
@@ -42,7 +44,7 @@ branches:
   targetId: bot-issues-notpermitted
 - message: "FredBoat is lagging."
   targetId: bot-issues-lag
-- message: "FredBoat is responding, but not playing any audio (acts like it's muted)."
+- message: "FredBoat is responding, but not playing any audio or doesn't join the VC."
   targetId: bot-issues-noaudio
 - message: "Go back one step"
   targetId: bot-root
@@ -95,7 +97,7 @@ branches:
 - message: "Restrict members from using some of the commands"
   targetId: bot-settings-perms
 - message: "Make FredBoat Stay in the VC indefinitely"
-  targetId: bot-settings-stay
+  targetId: bot-fredstay
 - message: "Go back one step"
   targetId: bot-root
 
@@ -157,11 +159,11 @@ title: "Say `;;lang` to start changing your preferred language."
 
 ---
 id: bot-settings-prefix
-title: "To set the bot's prefix, say `;;prefix [Your preferred prefix]` or do `;;help prefix` for more information.
+title: "To set the bot's prefix, say `;;prefix [Your preferred prefix]` or `;;help prefix` for more information."
 
 ---
 id: bot-settings-restrict
-title: "Use the Discord permissions to take away FredBoat's `Write` permissions for all the channels where it should not talk in. Likewise, if you do not want the bot to join certain voice channels, take away its permissions to `Connect`.\n
+title: "Use the Discord permissions to take away FredBoat's `Write` permissions for all the channels where it should not talk in. Likewise, if you do not want the bot to join certain voice channels, take away its permissions to `Connect`. \n
 Also please make sure that none of the roles the bot (or `@everyone`) has Administrator permissions in Server Settings > Roles\n
 https://imgur.com/ZVQZoaN"
 
@@ -232,7 +234,7 @@ branches:
   targetId: server-ads
 - message: "I have a suggestion that will improve the server"
   targetId: server-suggestions
-- message: "I have looked at **all** the options, and none of them helped me."
+- message: "**None of the options helped! Get me in touch with an actual person!**"
   targetId: support-role
 
 ---
