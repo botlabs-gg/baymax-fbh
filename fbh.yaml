@@ -6,6 +6,10 @@ branches:
   targetId: bot-root
 - message: "I need help with the FredBoat Server"
   targetId: server-root
+- message: "I want to support Fredboat's development and get extra features"
+  targetId: bot-types-patron
+- message: "I would like to buy some FredBoat goodies"
+  targetId: merch-announcement
 - message: "**None of the options helped! Get me in touch with an actual person!**"
   targetId: support-role
 
@@ -61,8 +65,6 @@ branches:
   targetId: bot-commands
 - message: "Is there a way that I can make FredBoat stay in my channel, even if there is no one in it?"
   targetId: bot-fredstay
-- message: "I'd like to support the development and get extra features."
-  targetId: bot-types-patron
 - message: "Can I have more than one FredBoat in my server?"
   targetId: bot-morefred
 
@@ -191,7 +193,7 @@ title: "<@184405311681986560> plays music, livestreams, and playlists for you an
 id: bot-types-patron
 title: "You can support Fredboat's development by becoming a Patron on Patreon. For just $2 a month you can also enjoy premium features with the FredboatPatron bot including:\n
 1. Little to no lag\n
-2. ;;volume command control\n
+2. `;;volume` command control\n
 3. The ability to play Spotify playlists.\n
 4. Have FredBoat stay in the VC indefinitely without selfhosting.\n
 5. The Patron role in this Discord Server!\n
@@ -275,3 +277,8 @@ id: server-suggestions
 title: "If you have a reasonable suggestion for the bot, please check out our <#183979058575441920> channel.\n
 Also make sure that the thing you are suggesting has not been discussed before by using the search function.\n\n
 __We will NOT add a memes channel__"
+
+###Merch
+---
+id: merch-announcement
+title: "We, the FredBoat staff, have been discussing the possibility of selling FredBoat-branded merchandise, since we've reached one million users\n :confetti_ball: , and recently have created a poll to see what kind of merchandise our users want. If you wish to help us, please check out the poll here:\n https://fredboat.com/docs/merch"
