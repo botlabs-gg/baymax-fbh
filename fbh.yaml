@@ -52,7 +52,8 @@ branches:
   targetId: bot-issues-noaudio
 - message: "Go back one step"
   targetId: bot-root
-
+- message: "Some of the translations are incorrect"
+  targetId: translator
 ---
 id: bot-questions
 title: "Here are some of the most common questions"
@@ -221,6 +222,9 @@ id: support-role
 title: "Please explain your issue in detail to one of our staff members in <#262355115137171457>." # #support
 roleId: 503984429044203538 # @Needs Human Assistance
 
+---
+id: translator
+title: "If the translations are incorrect, you can become a translator to correct this, please read the pins in <#268292192085344256> and the channel description"
 ###Server Questions
 ---
 id: server-root
