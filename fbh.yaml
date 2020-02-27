@@ -50,10 +50,10 @@ branches:
   targetId: bot-issues-lag
 - message: "FredBoat is responding, but not playing any audio or doesn't join the VC."
   targetId: bot-issues-noaudio
-- message: "Go back one step"
-  targetId: bot-root
 - message: "Some of the translations are incorrect"
   targetId: translator
+- message: "Go back one step"
+  targetId: bot-root
 ---
 id: bot-questions
 title: "Here are some of the most common questions"
@@ -68,7 +68,6 @@ branches:
   targetId: bot-fredstay
 - message: "Can I have more than one FredBoat in my server?"
   targetId: bot-morefred
-
 ---
 id: bot-issues-offline
 title: "Let's make sure that you have the correct bot first."
