@@ -8,8 +8,6 @@ branches:
   targetId: server-root
 - message: "I want to support Fredboat's development and get extra features"
   targetId: bot-types-patron
-- message: "I would like to buy some FredBoat goodies"
-  targetId: merch-announcement
 - message: "**None of the options helped! Get me in touch with an actual person!**"
   targetId: support-role
 
@@ -280,8 +278,3 @@ id: server-suggestions
 title: "If you have a reasonable suggestion for the bot, please check out our <#183979058575441920> channel.\n
 Also make sure that the thing you are suggesting has not been discussed before by using the search function.\n\n
 __We will NOT add a memes channel__"
-
-###Merch
----
-id: merch-announcement
-title: "We, the FredBoat staff, have been discussing the possibility of selling FredBoat-branded merchandise, since we've reached one million users\n :confetti_ball: , and recently have created a poll to see what kind of merchandise our users want. If you wish to help us, please check out the poll here:\n https://fredboat.com/docs/merch"
