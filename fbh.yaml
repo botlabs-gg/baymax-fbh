@@ -128,7 +128,9 @@ title: "To allow FredBoat to connect to a voice channel and play music, you need
     - `Connect`\n
     - `Speak`\n
     - `Use Voice Activity`\n
-If you don't know how to do this; here is a gif to help out: https://uzume.s-ul.eu/Ad2HQbpQ.gif"
+If you don't know how to do this; here is a gif to help out: https://uzume.s-ul.eu/Ad2HQbpQ.gif \n
+
+Should the issue still presist, please check your category (dropdown menu for channels) permissions as well."
 
 ---
 id: bot-issues-lag
