@@ -111,31 +111,28 @@ title: "- You need Manage Server permissions in the server you want to add fredb
 
 ---
 id: bot-issues-memberlist
-title: "If you are sure that you have added the bot to your discord, but cannot see it on the right, either look for it in Server Settings > Members, or make sure it has read permissions to the text channel you are in."
+title: "If you are sure that you have added the bot to your discord, but cannot see it on the right, either look for it in Server Settings > Members, or make sure it has read permissions to the text channel and category you are in."
 
 ---
 id: bot-issues-notresponding
-title: "If the bot is not responding to any of your messages in a given channel, make sure that it has the following permissions, by clicking on the channel settings:\n
-    - `Read Messages`\n
+title: "If the bot is not responding to any of your messages in a given channel, make sure that it has the following permissions in both the text channel and category (dropdown menu for channels), by clicking on the channel settings:\n
+    - `View Channel`\n
     - `Send Messages`\n
     - `Embed Links`\n
     - `Read Message History`"
 
 ---
 id: bot-issues-notpermitted
-title: "To allow FredBoat to connect to a voice channel and play music, you need to click the settings icon for your voice channel and give it the following permissions:\n
+title: "To allow FredBoat to connect to a voice channel and play music, you need to click the settings icon for your voice channel and category (dropdown menu for channels) and give it the following permissions:\n
     - `View Channel`\n
     - `Connect`\n
     - `Speak`\n
-    - `Use Voice Activity`\n
-If you don't know how to do this; here is a gif to help out: https://uzume.s-ul.eu/Ad2HQbpQ.gif \n
-
-Should the issue still presist, please check your category (dropdown menu for channels) permissions as well."
+    - `Use Voice Activity`"
 
 ---
 id: bot-issues-lag
 title: "- Sit through and hope for better hardware soon\n
-- Change voice region to or close to us-east which might not help a lot => https://imgur.com/a/pq5OM \n
+- Change voice region to or close to us-east which might not help a lot => **Voice Channel Settings** -> **Overview** -> **Region Override** \n
 - Support us and get access to a premium bot with little to no downtime and lag, as well as some extra features such as the `;;volume` command, Patron role on our server and Spotify Playlist integration => https://www.patreon.com/fredboat"
 
 ---
@@ -146,9 +143,8 @@ Also if you'd rather not spend money, you can also help us test new features by 
 
 ---
 id: bot-issues-noaudio
-title: "Most of the no audio issues that occur are because of Discord's audio node going bad. To resolve those, you'll need to change your voice region. You can do so, by going to your Server settings. Please refer to the gif below, should you need further help. \n
-If that doesn't resolve your issue, you can also try issuing the `;;destroy` command.\n
-https://imgur.com/a/pq5OM"
+title: "Most of the no audio issues that occur are because of Discord's audio node going bad. To resolve those, you'll need to change your voice region. You can do so, by going to **Voice Channel Settings** -> **Overview** -> **Region Override**. \n
+If that doesn't resolve your issue, you can also try issuing the `;;destroy` command."
 
 ---
 id: bot-issues-offline-wrongbot
@@ -165,9 +161,8 @@ title: "To set the bot's prefix, say `;;prefix [Your preferred prefix]` or `;;he
 
 ---
 id: bot-settings-restrict
-title: "Use the Discord permissions to take away FredBoat's `Write` permissions for all the channels where it should not talk in. Likewise, if you do not want the bot to join certain voice channels, take away its permissions to `Connect`. \n
-Also please make sure that none of the roles the bot (or `@everyone`) has Administrator permissions in Server Settings > Roles\n
-https://imgur.com/ZVQZoaN"
+title: "Use the Discord permissions to take away FredBoat's `Send Messages` permissions for all the channels where it should not talk in. Likewise, if you do not want the bot to join certain voice channels, take away its permissions to `Connect`. Also check your category permissions to make sure they are not overriding any channel permissions. \n
+Also please make sure that none of the roles the bot (or `@everyone`) has Administrator permissions in Server Settings > Roles"
 
 ---
 id: bot-settings-perms
@@ -208,13 +203,11 @@ For a full list of the available commands of the bot, type in `;;commands all`."
 id: bot-fredstay
 title: "Fredboat Music is set to leave automatically when there are no users in the channel.\n
 You can not make the Free Fredboat stay in the voice channel indefinitely. This is to conserve resources and will not be changing.
-However, if you wish to have a bot that is capable of staying in the channel all the time you need to either self-host => <https://fredboat.com/docs/selfhosting>\n
-Or pay for the Patron bot which is just $2 a month => https://fredboat.com/docs/donate."
+However, if you wish to have a bot that is capable of staying in the channel all the time you need to pay for the Patron bot which is just $2 a month => https://fredboat.com/docs/donate."
 
 ---
 id: bot-morefred
-title: "It is not possible to have more than one of the same bot in your server. However you can work around that by selfhosting => <https://fredboat.com/docs/selfhosting>\n
-Or by paying for the Patron bot which is just $2 a month => https://fredboat.com/docs/donate."
+title: "It is not possible to have more than one of the same bot in your server. However you can work around that by paying for the Patron bot which is just $2 a month => https://fredboat.com/docs/donate."
 
 ---
 id: support-role
